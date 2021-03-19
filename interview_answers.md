@@ -3,8 +3,26 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What problem does the context API help solve?
 
+Context allows us to pass data through the component tree without having to pass props manually to every component.
+
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+The `store` manages state globally and allows us to provide slices of state to connected components without having to prop drill.
+An `action` is an object with a type and a payload that are created by a function. Actions are dispatched when a UI event occurs and they tell the
+reducer which slices of state to update.
+The `reducer` updates state based on the action type that was dispatched.
+The store is known as a `single source of truth` because it provides predictabled and controlled state globally.
+All components connected to the store are provided state from one source rather than each component having its own source.
 
 3. What does `redux-thunk` allow us to do? How does it change our `action-creators`?
 
+`redux-thunk` allows to dispatch actions asynchronously, for example it is used when we want to set a slice of state
+to a response from `GET` request. It changes our `action-creators` by returning a function from a function that then dispatches
+actions. It intercepts in between the action and reducer. 
+
 4. What is your favorite state management system you've learned and this sprint? Please explain why!
+
+My favorite state management system that I have learned this sprint is Redux because it is centrailized, flexible, testable, and debuggable.
+I appreciate the separation of concerns because it becomes clear what data is being inputed and which slices of state are being updated.
+Additionally, action types are a great way to describe what event occured that triggered an action being dispatched. Finally, component level
+code is much cleaner and easier to follow, especially when the project is done on a bigger scale. 
