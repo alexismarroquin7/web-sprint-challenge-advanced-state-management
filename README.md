@@ -43,17 +43,17 @@ In this challenge, you are to build a Smurfs village database utilizing Redux as
 #### reducers/index.js
   Add in the needed state and reducer cases to hold and modify smurf error messages, loading status and smurf data. **If at all possible, add in action cases one at a time, instead of all at once. Test your state connects and reducer cases as nessisary.**
 
-  * [ ] Adds the following state values into the initialState:
+  * [x] Adds the following state values into the initialState:
       - an array of smurfs
       - a boolean indicating if the app is loading
       - a string indicating a possible error message
 
-  * [ ] Add in the arguments needed to complete a standard reducer function.
-  * [ ] Add in a reducer case to accomidate the start of a smurf fetch.
-  * [ ] Add in a reducer case to accomidate the successful smurf api fetch.
-  * [ ] Add in a reducer cases to accomidate the failed smurf api fetch.
-  * [ ] Add in a reducer case to accomidate adding a smurf (including the name, nickname, position, summary and an internally generated id) into your smurf list.
-  * [ ] Add in a reducer case that adds in a value to the error message.
+  * [x] Add in the arguments needed to complete a standard reducer function.
+  * [x] Add in a reducer case to accomidate the start of a smurf fetch.
+  * [x] Add in a reducer case to accomidate the successful smurf api fetch.
+  * [x] Add in a reducer cases to accomidate the failed smurf api fetch.
+  * [x] Add in a reducer case to accomidate adding a smurf (including the name, nickname, position, summary and an internally generated id) into your smurf list.
+  * [x] Add in a reducer case that adds in a value to the error message.
 
 #### index.js
   * [x] Connect your application to reducer through redux with the thunk and logger middleware packages attached.
@@ -84,10 +84,10 @@ In this challenge, you are to build a Smurfs village database utilizing Redux as
 #### components/AddForm.js
   Connect this component to redux **passing in your error message state value, setError action and addSmurf action.** Complete the form handling code.
 
-  * [ ] Connect the errorMessage, setError and addSmurf actions to the AddForm component.
-  * [ ] Replace all instances of the errorMessage static variable with your error message state value. 
-  * [ ] Within the handleSubmit function, replace the static assignment to errorMessage with a call to the setError action. Test that an error is displayed when this validation code fails.
-  * [ ] Within the handleSubmit function, call your addSmurf action with the smurf name, position, nickname and summury passed as arguments. Test that a smurf is correctly added to when the form is submitted.
+  * [x] Connect the errorMessage, setError and addSmurf actions to the AddForm component.
+  * [x] Replace all instances of the errorMessage static variable with your error message state value. 
+  * [x] Within the handleSubmit function, replace the static assignment to errorMessage with a call to the setError action. Test that an error is displayed when this validation code fails.
+  * [x] Within the handleSubmit function, call your addSmurf action with the smurf name, position, nickname and summury passed as arguments. Test that a smurf is correctly added to when the form is submitted.
 
   **Notes:**
 
